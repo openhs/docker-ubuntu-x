@@ -3,7 +3,7 @@
 # Project: docker-ubuntu-x
 # License: GNU GPLv3
 #
-# Copyright (C) 2016 Robert Cernansky
+# Copyright (C) 2016 - 2018 Robert Cernansky
 
 
 
@@ -12,17 +12,12 @@ FROM ubuntu
 
 
 MAINTAINER openhs
-LABEL version = "0.0.0" \
+LABEL version = "0.0.1" \
       description = "Base Ubuntu image for X applications."
 
 
 
-RUN /bin/echo -e \
-      "deb http://archive.ubuntu.com/ubuntu/ xenial multiverse\n \
-       deb http://archive.ubuntu.com/ubuntu/ xenial-updates multiverse\n \
-       deb http://archive.ubuntu.com/ubuntu/ xenial-security multiverse" >> \
-         /etc/apt/sources.list && \
-    apt-get update
+RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     xauth
