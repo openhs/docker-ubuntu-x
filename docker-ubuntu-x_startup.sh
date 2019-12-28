@@ -38,4 +38,4 @@ echo "adding authorization token for X server"
 
 applicationWithArguments="${application} ${@}"
 echo "starting the application ${applicationWithArguments}"
-su - --shell /bin/sh --command "${applicationWithArguments}" ${USER}
+su --shell /bin/sh --command "${applicationWithArguments}" ${USER}
