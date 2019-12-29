@@ -3,7 +3,7 @@
 # Project: docker-ubuntu-x
 # License: GNU GPLv3
 #
-# Copyright (C) 2016 - 2018 Robert Cernansky
+# Copyright (C) 2016 - 2019 Robert Cernansky
 
 
 
@@ -12,7 +12,7 @@ FROM ubuntu
 
 
 MAINTAINER openhs
-LABEL version = "0.0.1" \
+LABEL version = "0.0.2" \
       description = "Base Ubuntu image for X applications."
 
 
